@@ -1,0 +1,346 @@
+/*************************************/
+/* Eléments principaux de la page */
+* {
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+header,
+nav,
+section,
+footer{
+  display: block;
+}
+ul,ol{
+  list-style: none;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  }
+.content{
+  width: 95%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/*********************/
+  /*Média Query*/
+  @media screen and (max-width: 768px) {
+  
+    /*Section navBar*/
+.navBar{
+    justify-content: center;
+    flex-basis: 100%;
+    gap: 2rem;
+    border-bottom: 4px solid #F2F2F2;
+  }
+  .navBarLink {
+    border-bottom: 4px solid transparent;
+    padding-bottom: 20px;
+    padding-inline: 30px ;
+
+  }
+  .navBarLink:hover {
+    border-top: none;
+    border-color: #0065fc;
+  }
+/***********/
+  /*Section Reserch*/
+.searchbox{
+  padding: 2rem;
+  }
+.search .fa-solid{
+    visibility: visible;
+  }
+  
+}
+/***********/
+  /*Section Filter*/
+  .filter{
+    
+  }
+
+  @media screen and (max-width: 992px) {
+    /*Section navBar*/
+    /*Section Reserch*/
+    /*Section Filter*/  
+  }
+/**************/
+  /*style*/
+  .bolt{
+    font-weight: bolder;
+  }
+  .styleBox{
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .titre h1{
+    font-size: 2.2em ;
+    margin: 20px 0 0.5rem 15px;
+  }
+  .titre p{
+    margin: 0 20px;
+    font-size: large;
+  }
+/***********/
+  /*logo*/
+  header img{
+    margin-right: auto;
+    padding-left: 2rem;
+  }
+  h3{
+  margin-left: 1rem;
+  }  
+/**********************************/
+  /*  Eléments de navigation */
+  nav{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+  .navBar{
+    display: flex;
+    margin-left: auto;
+    font-weight: 500;
+  }
+  .navBarLink {
+    border-top: 4px solid transparent;
+    padding-top: 25px;
+    padding-inline: 30px ;
+  }
+  .navBarLink:hover {
+    border-color: #0065fc;
+  }
+  .navBarLink:hover {
+    color: #0065fc;
+  }
+/*************************/
+  /*Barre de recherche*/
+  .searchbox{
+    width: 53%;
+    padding: 1rem;
+  }
+  .location-dot{
+    width: 25%;
+    height: 60px;
+    border:2px solid #f2f2f2;
+    background: #f2f2f2;
+    border-radius: 1rem 0 0 1rem;
+    min-width: 4rem;
+    max-width: 4.1rem;
+    padding-left: 21px;
+  }
+  input{
+    height: 55px;
+  }
+  .styleSearchInput{
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 3px 2.5rem;
+    font-size: 1rem;
+  }
+  .search{
+    color: white;
+    width: 150px ;
+    height: 60px;
+    border:2px solid #f2f2f2;
+    background: #0065fc;
+    border-radius: 0 1rem 1rem 0;
+    font-size: 1rem;
+    padding: 0 1.5rem; 
+    cursor: pointer;
+  }
+  .search .fa-solid {
+    display: none;
+  }
+/***************/
+  /*Filtre*/
+  .filter {
+    display: flex;
+    width: 100%;
+    margin: 1rem;
+  }
+  .styleBoxFilter{
+    margin-right: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+  }
+  .styleBoxFilter ul{
+    display: flex;
+      gap: 1rem;
+  }
+  .filter li {
+    width: 223px;
+    border: 2px solid #deebff;
+    border-radius: 100vh;
+    align-items: center;
+  }
+  .styleTextBoxFilter{
+    margin-top: 1.6rem;
+    font-size: x-large;
+  }
+  .filter li:hover {
+    color: #0065fc;
+  }
+  .filter .fa-solid{
+    background: #deebff;
+    color: #0065fc;
+    border-radius: 100%;
+    padding: 14px; 
+    margin: -1px;
+  }
+  .styleTextFilter{
+  padding-left: 1rem;
+  }
+  .cercle{
+  aspect-ratio: 1 / 1;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+.info .fa-solid {
+  border: #deebff 2px solid;
+  color: #0065fc;
+  border-radius: 100%;
+  padding-left: 8px;
+  margin: 7px;
+  font-weight: 600;
+  padding-top: 3px;
+}
+.info{
+  border: 2px solid #0065fc;
+  display: flex;
+}
+/******************/
+/*Hébergement*/
+.contentAccommodations{
+display: flex;
+gap: 20px;
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px ;
+  gap: 1rem;
+}
+.accommodations{
+  border: 2PX solid salmon;
+  background: #f2f2f2;
+  width: 68%;
+  padding: 10px; 
+}
+.accommodations h4, h5{
+  margin-top: 3rem;
+}
+.styleCard{
+  background-color: white;
+  padding: 0.375rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 16px #0000;
+  cursor: pointer;
+  height: 100%;
+}
+.styleCard :hover{
+
+
+}
+.styleTextCard h4,p,.stars{
+  margin-top: 3px;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+.stars{
+  color: #0065fc;
+}
+.accommodations img{
+  object-fit: cover;
+  width: 223px;
+  height: 109px;
+  border-radius: 12px 12px 0 0;
+  margin: 5px;
+}
+.noChecked{
+color: #deebff;
+}
+/************************/
+/*Les plus Populaires*/
+.mostPopular{
+  width: 30%;
+  background: #f2f2f2;
+  padding: 12px;
+}
+.mostPopular i{
+  margin-left: 40%;
+}
+.allCardmostPopular{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.mostPopular .fa-solid{
+  align-items: center;
+  justify-content: center;
+}
+.mostPopular img {
+  object-fit: cover;
+  width: 125px;
+  height: 127px;
+  border-radius: 12px 0 0 12px;
+  margin: 5px;
+}
+.mostPopular .styleCard{
+  display: flex;
+  margin-bottom: 1px;
+  width: 100%;
+}
+.mostPopular .stars{
+  margin-top: 53px ;
+}
+/****************/
+/*Activités*/
+.contentActivity{
+  border: 2px solid blue;
+}
+.activity{
+  padding: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 22px;
+  }
+  
+  .div1 { grid-area: 1 / 1 / 3 / 2; }
+  .div2 { grid-area: 1 / 2 / 2 / 3; }
+  .div3 { grid-area: 2 / 2 / 3 / 3; }
+  .div4 { grid-area: 1 / 3 / 3 / 4; }
+  .div5 { grid-area: 1 / 4 / 2 / 5; }
+  .div6 { grid-area: 2 / 4 / 3 / 5; }
+  
+  .activity img {
+    object-fit: cover;
+    width: 95%;
+    height: 46%;
+    border-radius: 12px 12px 0 0;
+    margin: 5px;
+  }
+  .activity img .div1 .div3 {
+    height: auto;
+  }
+  .activity .styleCard{
+    padding: 0.375rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 2px #0000002e;
+    cursor: pointer;
+    height: 100%;
+  }
+/***********/
+/*Footer*/
