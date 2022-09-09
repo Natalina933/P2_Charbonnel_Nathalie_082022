@@ -184,6 +184,8 @@ body{
   display: flex;
   gap: 0.6em;
   justify-content: space-evenly;
+
+
 }
 .card{
   display: flex;
@@ -197,6 +199,7 @@ body{
   border: 2PX solid salmon;
   background: #f2f2f2;
   width:76%;
+  border-radius: 1.25rem;
 }
 .accommodations h4, h5{
   margin-top: 3rem;
@@ -235,6 +238,7 @@ body{
   width: 30%;
   background: #f2f2f2;
   padding: 12px;
+  border-radius: 1.25rem;
 }
 .mostPopular i{
   margin-left: 40%;
