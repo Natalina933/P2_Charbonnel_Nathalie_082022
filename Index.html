@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css">
 
     <!--feuille de styles css-->
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
     <!-- icone de l'onglet -->
-	<link rel="shortcut icon" href="/images/logo/Booki.png">
+	<link rel="shortcut icon" href="./images/logo/Booki.png">
     
     <title>Booki</title>
 
@@ -28,19 +28,19 @@
 
 </head>
 <body>
-    <!--Section Navbar-->
+    <!--Section Header-->
     <header class="content">
-        <nav>  
-            <a href="Index.html"><img src="./images/logo/Booki.png" alt="Logo Booki"> </a>
-                <div class="navBar ">
-                        <div class="navBarLink ">
-                            <a href="#accommodations">Hébergements</a>
-                        </div>
-                        <div class="navBarLink ">
-                            <a href="#activity">Activités</a>
-                        </div>
-                </div>
-        </nav>
+            <nav>
+                <a href="Index.html"><img src="./images/logo/Booki.png" alt="Logo Booki"> </a>
+                    <div class="navBar ">
+                            <div class="navBarLink ">
+                                <a href="#accommodations">Hébergements</a>
+                            </div>
+                            <div class="navBarLink ">
+                                <a href="#activity">Activités</a>
+                            </div>
+                    </div>
+            </nav>
     </header>
     
 <main class="content">
@@ -54,7 +54,8 @@
         <div class="bold searchbox styleBox">
             <div class="location-dot styleBox "><i class="fa-solid fa-location-dot"></i></div>
             <input class="styleSearchInput bold" type="search" placeholder="Saisissez votre destination" alt="searchbox">
-            <button class="search styleBox"><i class="fa-solid fa-magnifying-glass"></i>Rechercher</button>   
+            <button class="buttonSearch"><i class="fa-solid fa-magnifying-glass"></i>
+                <span class="styleTextButtonSearch">Rechercher</span></button>   
         </div>
     </section>
 <article>
@@ -74,8 +75,8 @@
             <p><i class="fa-solid fa-info cercle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
 <!--Section hébergement-->
-<section class="contentAccommodations">
-    <div class="accommodations" id="accommodations">
+<section class="contentAccommodations" id="accommodations">
+    <div class="accommodations">
         <h3>Hébergements à Marseille</h3>
             <div class="card">
                 <div class="styleCard">
@@ -305,7 +306,7 @@
     </article>
 </main>  
 
-<footer class="content">
+<footer class="contentFooter">
     <div>
         <h3><strong>A propos</strong></h3>
         <h4>Fonctionnement du site</h4>

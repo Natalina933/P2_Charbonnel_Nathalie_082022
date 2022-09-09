@@ -4,11 +4,11 @@
   "description": "Projet 2",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass":"sass --watch ./main.scss:.style.css"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.54.8"
+    "sass": "^1.54.9"
   }
 }
