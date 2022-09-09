@@ -122,7 +122,7 @@ body{
   .buttonSearch .fa-solid {
     display: none;
   }
-  /*Filtre*/
+    /******Filtre*/
   .filter {
     display: flex;
     width: 100%;
@@ -208,9 +208,9 @@ body{
   cursor: pointer;
   height: 100%;
 }
-.styleCard :hover{
-  font-size: larger;
-
+.styleCard:hover{
+  transform: scale(1.02);
+  background-color: #deebff;
 }
 .styleTextCard h4,p,.stars{
   margin-top: 3px;
@@ -303,7 +303,7 @@ body{
 /*Footer*/
 .contentFooter{
   border: 2px solid blueviolet;
-  columns: 4;
+  columns: 3;
 }
 
 /*********************/
