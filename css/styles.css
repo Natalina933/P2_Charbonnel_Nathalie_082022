@@ -28,17 +28,18 @@ body{
 /*style principal*/
 .bolt{
   font-weight: bolder;
-  }
-  .styleBox{
-    display: flex;
-    align-items: center;
-  }
-  .titre h1{
-    font-size: 2.2em ;
-    margin: 10px 0 10px 7px;  }
-  .titre p{
-    font-size: large;
-  }
+}
+.styleBox{
+  display: flex;
+  align-items: center;
+}
+.titre h1{
+  font-size: 2.2em ;
+  margin: 10px 0 10px 7px;
+}
+.titre p{
+   font-size: large;
+}
 /***** - Section Header - *****/    
     /*logo*/
   header img{
@@ -59,13 +60,11 @@ body{
     font-weight: 500;
   }
   .navBar a{
+    flex-basis: 50%;
     padding: 2rem;
-  }
-  .navBarLink {
-    padding-top: 34px;
     border-top: 4px solid transparent;
   }
-  .navBarLink:hover {
+  .navBar a:hover {
     border-top: 4px solid #0065fc;
     color: #0065fc;
   }
@@ -89,7 +88,7 @@ body{
     font-size: larger;
   }
   input{
-    height: 55px;
+    height: 3.6em;
   }
   .styleSearchInput{
     border-right: none;
@@ -99,25 +98,26 @@ body{
     padding-left: 15px ;
     font-size: 1rem;
     width: 100%;
-    min-width: 80%;
+    min-width: 64%;
     max-width: 20%;
   }
   .buttonSearch{
     color: white;
-    width: 49% ;
-    height: 60px;
+    width: 80px ;
+    height: 3.6em;
     border:2px solid #f2f2f2;
     background: #0065fc;
     border-radius: 0 1rem 1rem 0;
     font-size: 1rem;
     justify-content: center;
     cursor: pointer;
-    min-width: 37%;
+    min-width: 8rem;
   }
   .styleTextButtonSearch{
     justify-content: center;
     align-content: center;
-    font-size: larger;
+    text-transform: none;
+
   }
   .buttonSearch .fa-solid {
     display: none;
@@ -151,48 +151,49 @@ body{
   }
   .filter li:hover {
     color: #0065fc;
+    border: 2px solid #0065fc;
   }
   .filter .fa-solid{
     background: #deebff;
     color: #0065fc;
-    border-radius: 100%;
-    padding: 14px; 
-    margin: -1px;
+    width: 20%;
   }
   .styleTextFilter{
     padding-left: 1rem;
   }
-  .cercle{
-    aspect-ratio: 1 / 1;
-  width: 28px;
+.cercle i{
+  aspect-ratio: 1 / 1;
+  width: 38px;
   border-radius: 50%;
   border: #deebff 2px solid;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.filter .cercle i {
+    width: 3rem;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
+    margin: -1px;
+}
 .info .fa-solid {
   color: #0065fc;
-  padding-left: 8px;
 }
 .info{
-  border: 2px solid #0065fc;
   display: flex;
+ 
 }
 /*Hébergement*/
 .contentAccommodations{
   display: flex;
   gap: 0.6em;
-  justify-content: space-evenly;
-
-
 }
 .card{
   display: flex;
   gap: 0.6rem;
   box-shadow: 0 0 16px #0000;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   
 }
 .accommodations{
@@ -206,19 +207,19 @@ body{
 }
 .styleCard{
   background-color: white;
-  border-radius: 1.25rem;
+  border-radius: 12px;
   box-shadow: 0 0 20px #0000;
   cursor: pointer;
   height: 100%;
 }
 .styleCard:hover{
   transform: scale(1.02);
-  background-color: #deebff;
+  background-color: #46bed6;
 }
 .styleTextCard h4,p,.stars{
-  margin-top: 3px;
-  margin-bottom: 0;
-  margin-left: 13px;
+  margin-top: 6px;
+  margin-bottom: 1rem;
+  margin-left: 9px;
 }
 .stars{
   color: #0065fc;
@@ -303,6 +304,7 @@ body{
   box-shadow: 0 0 2px #0000002e;
   cursor: pointer;
   height: 100%;
+  /* overflow: hidden; */
 }
 /*Footer*/
 .contentFooter{
@@ -315,43 +317,42 @@ body{
 @media screen and (max-width: 768px) {
   
   /*Section navBar*/
-  .navBar{
-    justify-content: center;
-    flex-basis: 100%;
-  gap: 1rem;
-  border-bottom: 4px solid #F2F2F2;
-} 
-.navBarLink {
-  padding-bottom: 20px;
-    padding-inline: 30px ;
-    
-  }
-  .navBarLink a:hover {
+.navBar{
+  justify-content: center;
+  flex-basis: 100%; 
+  border-bottom: 4px solid transparent;  
+}  
+.navBar a {
+flex-basis: 50%;
+border-bottom: 4px solid #0065fc;
+text-align: center;}
+
+.navBar a:hover {
   border-top: none;
-}
-.navBarLink:hover {
-  border-bottom: 4px solid #0065fc;
+  border-bottom: 4px solid #d0d1d2;  
 }
 /***********/
 /*Section Reserch*/
-.searchbox{
-  min-width: 64%; ;
-}
 .styleTextButtonSearch {
   display: none;
-  
-}
-.buttonSearch .fa-solid {
-  display: contents;
-  
+  border-radius: 1rem 1rem 1rem 1rem;
 }
 
 .buttonSearch .fa-solid{
   display: block;
 }
-.styleTextbuttonSearch{
-  border-radius: 1rem 1rem 1rem 1rem;
-  
+
+.styleSearchInput{
+  overflow: visible;
+}
+/***********/
+/*Section Reserch*/
+.filter{
+  display: block;
+}
+.filter ul{
+  display: block;
+  max-width: 60%;
 }
 
 }
