@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 
     <!-- icone de l'onglet -->
-	<link rel="shortcut icon" href="./images/logo/Booki.png">
+	<link rel="icon"  type="image/x-icon" href="./images/logo/Booki.png">
     
     <title>Booki</title>
 
@@ -33,13 +33,11 @@
             <nav>
                 <a href="Index.html"><img src="./images/logo/Booki.png" alt="Logo Booki"> </a>
                     <div class="navBar ">
-                                <a href="#accommodations">Hébergements</a>
-                                <a href="#activity">Activités</a>
-                            </div>
+                        <a href="#accommodations">Hébergements</a>
+                        <a href="#activity">Activités</a>
                     </div>
             </nav>
     </header>
-    
 <main class="content">
     <!--Section Reserch-->
     <section>
@@ -78,10 +76,9 @@
 <section class="contentAccommodations" id="accommodations">
     <div class="accommodations">
         <h3>Hébergements à Marseille</h3>
-            <div class="card">
+            <div class="contentAllCards">
                 <div class="styleCard">
                     <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo Auberge La Cannebière">
-                <div>
                     <div>
                         <div class="styleTextCard">
                             <h4>Auberge La Cannebière</h4>
@@ -95,7 +92,6 @@
                             <span class="fa fa-star noChecked"></span>
                         </div>
                     </div>
-                </div>
                 </div> 
                 <div class="styleCard">
                     <img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo Hôtel du port">  
@@ -120,18 +116,18 @@
                     <div>
                         <div>
                             <div class="styleTextCard">
-                            <h4>Hôtel Les mouettes</h4>
-                            <p>Nuit à partir de <strong>76&#8364</strong></p>
+                                <h4>Hôtel Les mouettes</h4>
+                                <p>Nuit à partir de <strong>76&#8364</strong></p>
                             </div>
-                        <div class="stars">
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star noChecked"></span>
+                            <div class="stars">
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star noChecked"></span>
+                            </div>
                         </div>
-                        </div>
-                </div>
+                    </div>
                 </div> 
                 <div class="styleCard">
                     <img src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Photo Hôtel de la mer">    
@@ -191,10 +187,10 @@
         <h5>Afficher plus</h5>
     </div>
 <!--Section plus populaires-->
-    <div class="mostPopular">
+    <aside class="mostPopular">
         <h3>Les plus populaires<i class="fa-solid fa-star"></i></h3> 
         <div class="allCardmostPopular">
-            <div class="card">   
+            <div class="contentAllCards">   
                 <div class="styleCard">
                     <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo Hôtel le soleil du matin">  
                 <div>
@@ -247,81 +243,88 @@
                             <span class="fa fa-star noChecked"></span>
                         </div>
                     </div>
-                </div> 
-            </div>
-        </div>    
+                </div>
+                </div>
+            </div> 
+        </div>
+    </aside>    
 </section>
         
 <!--Section activités-->
-        <section class="contentActivity" id="activity">
+<section class="contentActivity" id="activity">
             <h3>Activités à Marseille</h3>
-                <div class="activity">
-                <div class="div1 styleCardActivity">
-                <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo du Vieux Port de Marseille">  
-                        <div class="styleTextCard">
-                        <h4>Vieux Port</h4>
-                    </div>
-                </div>
-                <div class="div2 styleCard">
-                <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo du Fort de Pomégues">  
-                    <div>
+        <div class="activity">
+            <div class="singleCard">
+                <a href="#" class="div1 styleCardActivity">
+                        <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo du Vieux Port de Marseille">  
+                            <div class="styleTextCard">
+                            <h4>Vieux Port</h4>
+                            </div>
+                    </a>
+            </div>    
+            <div class="doubleCards styleCardActivity">
+                <a href="#"class="div2">
+                    <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo du Fort de Pomégues">
                         <div class="styleTextCard">
                         <h4>Fort de Pomégues</h4>
                         </div>
-                    </div>
-                </div>
-                <div class="div3 styleCard">
-                <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo d'une des Iles du Frioul">  
-                    <div>
-                        <div class="styleTextCard">
+                </a>
+                <a href="#" class="div3">
+                    <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo d'une des Iles du Frioul">
+                    <div class="styleTextCard">
                         <h4>Iles du Frioul</h4>
-                        </div>
-                    </div>   
-                </div>
-                <div class="div4 styleCard"> 
-                <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">  
-                    <div>
-                        <div class="styleTextCard">
-                        <h4>Parc National des Calanques</h4>
-                        </div>
                     </div>
-                </div>
-                <div class="div5 styleCard"> 
-                <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">  
-                    <div>
+                </a>
+            </div>
+        <div class="singleCard">
+                <a href="#" class="div4 styleCardActivity"> 
+                <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">  
+                    <div class="styleTextCard">
+                    <h4>Parc National des Calanques</h4>
+                    </div>
+                <a/>
+        </div>
+                    <div class="doubleCards styleCardActivity">
+                <a href="#" class="div5 ">
+                    <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
                         <div class="styleTextCard">
                         <h4>Notre-Dame-de-la-Garde</h4>
                         </div>
-                    </div>
-                </div>
-                <div class="div6 styleCard"> 
-                <img src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">  
-                    <div>
+                </a>
+                <a class="div6 ">
+                    <img src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
                         <div class="styleTextCard">
-                        <h4>Parc longchamp</h4>
+                            <h4>Parc longchamp</h4>
                         </div>
-                    </div>   
-                </div>
-        </section>
-    </article>
+                <a/>
+            </div>
+            </div>
+</section>
+</article>
 </main>  
 
 <footer class="contentFooter">
     <div>
         <h3><strong>A propos</strong></h3>
-        <h4>Fonctionnement du site</h4>
-        <h4>Conditions générales de vente</h4>
-        <h4>Données et confidentialité</h4>
+        <ul>
+            <li>Fonctionnement du site</li>
+            <li>Conditions générales de vente</li>
+            <li>Données et confidentialité</li>
+        </ul>
     </div>
     <div>
-        <h3><strong>Nos hébergements</strong></h3>
-        <h4>Charte qualité</h4>
-        <h4>Soumettre votre hôtel</h4> 
+        <ul>
+            <li><strong>Nos hébergements</strong></li>
+            <li>Charte qualité</li>
+            <li>Soumettre votre hôtel</li> 
+        </ul>
     </div>
     <div>
-        <h3><strong>Assistance</strong></h3>
-        <h4>Centre d'aide</h4>
-        <h4>Nous contacter</h4> 
+        <ul>
+            <li><strong>Assistance</strong></li>
+            <li>Centre d'aide</li>
+            <li>Nous contacter</li> 
+        </ul>
     </div>        
 </footer>
 </body>
