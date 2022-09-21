@@ -224,19 +224,20 @@ h4, p {
   border-radius: 20px;
   justify-content: space-between;
   height: 100%;
+  gap: 20px;
 }
 .accommodations h4{
   margin-top: 36px;
 }
 .styleCard{
+  flex: 1;
+  min-width: 200px;
   background-color: white;
   border-radius: 12px;
   border: 2px solid white;
   overflow: hidden;
   box-shadow: 3px 3px 2px 2px #c3bfbf;
   cursor: pointer;
-  width: 30%;
-  height:30%;
 }
 .styleCard:hover{
   transform: scale(1.02);
@@ -244,7 +245,7 @@ h4, p {
   border: 1px solid #2f8597;
 }
 .accommodations .styleTextCard h4, p{
-  padding-top: 5px;
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 .accommodations h5{
@@ -254,8 +255,8 @@ h4, p {
 .accommodations img{
   object-fit: cover;
   background-position: center;
-  width: 96%;
-  height: 120px;
+  width: 100%;
+  height: 100px;
   border-radius: 15px 15px 0 0;
   padding: 5px;
 }
@@ -500,12 +501,12 @@ flex-direction: column-reverse;
   box-shadow: 3px 3px 2px 2px #c3bfbf;
   }
 .singleCard{
-  width: 93%;
+  flex: 1;
   height: 170px;
 }
 .doubleCards{
   flex-direction: column;
-  width: 93%;
+  flex: 2;
   height: 390px;
   gap: 15px;
 }
@@ -525,8 +526,5 @@ flex-direction: column-reverse;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.mainFooter{
-}
-.cardFooter a {
-}
+
 }
