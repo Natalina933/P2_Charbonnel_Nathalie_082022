@@ -310,17 +310,15 @@ h4, p {
   display: flex;
   height: 600px;
   justify-content: space-between;
+  gap: 32px;
 }
 #activity h3{
   margin-left: 33px;
   font-size: x-large;
-
 }
 .singleCard, .doubleCards{
   display: flex;
   flex-direction: column;
-  width: 23%;
-  height: 100%;
   gap: 32px;
 }
 .singleCard img, .doubleCards img {
@@ -335,6 +333,7 @@ h4, p {
   position: relative;
   box-shadow: 3px 3px 2px 2px #c3bfbf;
   border-radius: 15px;
+
 }
 .contentActivity .styleTextCardActivity{
   position: absolute;
@@ -359,7 +358,6 @@ h4, p {
 }
 /*Footer*/
 .contentFooter{
-  border: 2px solid blueviolet;
   max-width: 1440px;
   margin: auto;
   display: flex;
@@ -467,14 +465,11 @@ text-align: center;
 .accommodations .contentAllCards .styleCard {
   width: 100%;
   flex-direction: column;
-  height: auto;
 }
 .accommodations{
   background: none;
 }
-.accommodations img{
-  margin: 5px 15px;
-}
+
 /*Section mostPopular*/
 .contentAccommodations {
 flex-direction: column-reverse;
@@ -484,35 +479,13 @@ flex-direction: column-reverse;
 }
 /*Section Activity*/
 .contentAllCardsActivity{
-  flex-direction: column;
   flex-wrap: wrap;
   gap: 16px;
   height: auto;
 }
-.cardActivity{
-  margin: 0px 7px 11px 20px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 3px 3px 2px 2px #c3bfbf;
-  }
-.singleCard{
-  flex: 1;
-  height: 170px;
-}
-.doubleCards{
-  flex-direction: column;
-  flex: 2;
-  height: 390px;
-  gap: 15px;
-}
-.singleCard img, .doubleCards img{
-  border-radius: 17px;
-}
-.div2, .div6 {
-  height: 50%;
-}
-#activity h3 {
-  margin: 35px;
+.div1,.div2,.div4,.div5,.div6{
+flex: 1;
+
 }
 /*Footer*/
 
