@@ -205,8 +205,8 @@ h4, p {
   gap: 20px;
 }
 .accommodations h3,
-.mostPopular h3,
-#activity h3{
+.mostPopular h3
+{
   margin: 0;
   margin-bottom: 16px;
   font-size: x-large;
@@ -227,7 +227,7 @@ h4, p {
   gap: 20px;
 }
 .accommodations h4{
-  margin-top: 36px;
+  margin-top: 91px;
 }
 .styleCard{
   flex: 1;
@@ -273,7 +273,6 @@ h4, p {
   background: #f2f2f2;
   padding: 32px;
   border-radius: 20px;
-  height: 100%;
 }
 .mostPopular .titlePopular{
   display: flex;
@@ -312,6 +311,11 @@ h4, p {
   height: 600px;
   justify-content: space-between;
 }
+#activity h3{
+  margin-left: 33px;
+  font-size: x-large;
+
+}
 .singleCard, .doubleCards{
   display: flex;
   flex-direction: column;
@@ -329,6 +333,8 @@ h4, p {
   width: 100%;
   overflow: hidden;
   position: relative;
+  box-shadow: 3px 3px 2px 2px #c3bfbf;
+  border-radius: 15px;
 }
 .contentActivity .styleTextCardActivity{
   position: absolute;
@@ -338,13 +344,13 @@ h4, p {
   background-color: #fff;
 }
 .div1, .div4{
-  height: 100%;
+  flex: 1;
 }
 .div2, .div6{
-  height: 40%;
+  flex: 2;
 }
 .div3, .div5{
-  height: 60%;
+  flex: 1;
 }
 .styleTextCardActivity{
   position: absolute;
@@ -378,7 +384,7 @@ h4, p {
 /*Média Query*/
 
 
-@media screen and (min-width: 768px) and (max-width: 991px){
+@media screen and (max-width: 991px){
   /*section hébergement*/
   .contentAccommodations{
     flex-direction: column-reverse;
@@ -387,31 +393,24 @@ h4, p {
     width: 100%;
   }
   .accommodations .contentAllCards .styleCard {
-    width: 100%;
     justify-content: space-around;
-    height: auto;
   }
   .accommodations{
     background: none;
   }
-  .accommodations img{
-    margin: 11px 17px;
-  }
-  
   /*Section mostPopular*/
   .mostPopular{
     border-radius: 0;
   }
   /*Section Activity*/
 .contentAllCardsActivity{
-  flex-direction: column;
+  border: 2px solid sandybrown;
   flex-wrap: wrap;
-  gap: 16px;
-  height: auto;
+  gap: 9px;
+  height: 390px;
+  justify-content: space-evenly;
 }
 .cardActivity{
-  padding: 8px 20px 7px 15px;
-  margin: 0px 17px;
   background-color: white;
   border-radius: 12px;
   border: 2px solid white;
@@ -419,13 +418,9 @@ h4, p {
   box-shadow: 3px 3px 2px 2px #c3bfbf;
   }
 .singleCard{
-  width: 96%;
-  height: 170px;
+flex: 1;
 }
 .doubleCards{
-  flex-direction: column;
-  width: 96%;
-  height: 390px;
   gap: 15px;
 }
 }
