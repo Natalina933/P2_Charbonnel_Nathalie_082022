@@ -32,10 +32,6 @@ body {
 }
 
 /*style principal*/
-.bolt {
-  font-weight: bolder;
-}
-
 .styleBox {
   display: flex;
   align-items: center;
@@ -276,9 +272,9 @@ button:hover {
 .styleCard {
   flex: 1;
   min-width: 200px;
-  background-color: white;
+  background: white;
   border-radius: 12px;
-  border: 2px solid white;
+  padding: 2px;
   overflow: hidden;
   box-shadow: 3px 3px 2px 2px #c3bfbf;
   cursor: pointer;
@@ -287,7 +283,7 @@ button:hover {
 .styleCard:hover {
   transform: scale(1);
   background: #3fadc3;
-  border: 2px solid #2f8597;
+  padding: 2px;
   transition: 1s;
 }
 
@@ -295,11 +291,6 @@ button:hover {
 p {
   margin-top: 5px;
   margin-bottom: 5px;
-}
-
-.accommodations h5 {
-  margin-left: 32px;
-  font-size: larger;
 }
 
 .accommodations img {
@@ -400,7 +391,6 @@ p {
   position: relative;
   box-shadow: 3px 3px 2px 2px #c3bfbf;
   border-radius: 15px;
-
 }
 
 .contentActivity .styleTextCardActivity {
@@ -433,7 +423,7 @@ p {
 }
 
 .cardActivity:hover {
-  border: thick double #2f8597;
+  outline-style: double;
 }
 
 /*Footer*/
@@ -447,6 +437,7 @@ p {
 .cardFooter {
   display: flex;
   flex-direction: column;
+  padding: 17px;
   min-width: 30%;
 }
 
@@ -459,12 +450,9 @@ p {
   color: inherit;
 }
 
-
-
+/******************************/
 /*********************/
-/*Média Query*/
-
-
+/***********Média Queries tablette***********/
 @media screen and (max-width: 991px) {
 
   /*section hébergement*/
@@ -495,8 +483,8 @@ p {
     border: 2px solid sandybrown;
     flex-wrap: wrap;
     gap: 9px;
-    height: 390px;
-    justify-content: space-evenly;
+    height: auto;
+    padding: 17px;
   }
 
   .cardActivity {
@@ -505,6 +493,11 @@ p {
     border: 2px solid white;
     overflow: hidden;
     box-shadow: 3px 3px 2px 2px #c3bfbf;
+  }
+
+  .singleCard,
+  .doubleCards {
+    width: 20%;
   }
 
   .singleCard {
@@ -516,7 +509,8 @@ p {
   }
 }
 
-@media screen and (max-width: 767px) {
+/**********média queries téléphone***********/
+@media screen and (max-width: 768px) {
   header img {
     margin-right: 0;
   }
@@ -559,11 +553,10 @@ p {
   }
 
   .styleSearchInput {
-    min-width: 200px;
+    min-width: 238px;
   }
 
   /***********/
-
   /*section hébergement*/
   .accommodations .contentAllCards .styleCard {
     width: 100%;
@@ -571,26 +564,7 @@ p {
     flex-direction: column;
   }
 
-  .accommodations {
-    background: none;
-  }
-
-  /*Section mostPopular*/
-  .contentAccommodations {
-    flex-direction: column-reverse;
-  }
-
-  .mostPopular {
-    border-radius: 0;
-  }
-
   /*Section Activity*/
-  .contentAllCardsActivity {
-    flex-wrap: wrap;
-    gap: 16px;
-    height: auto;
-  }
-
   .singleCard {
     height: 250px;
     width: 100%;
@@ -610,14 +584,6 @@ p {
     flex: 1;
   }
 
-  .div2,
-  .div3,
-  .div5,
-  .div6 {
-    height: 250px;
-    width: 100%;
-  }
-
   .div2 img,
   .div3 img,
   .div5 img,
@@ -626,7 +592,6 @@ p {
   }
 
   /*Footer*/
-
   .contentFooter {
     display: flex;
     flex-direction: column;
