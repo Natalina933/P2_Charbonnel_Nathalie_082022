@@ -9,6 +9,7 @@ nav,
 section,
 footer {
   display: block;
+  margin: 0 0 22px 5px;
 }
 
 ul,
@@ -37,13 +38,12 @@ body {
   align-items: center;
 }
 
-.titre h2 {
+.titre h3 {
   margin: 30px 0 10px 17px;
 }
 
 .titre p {
-  font-size: large;
-}
+  margin: 16px 0 16px 17px;}
 
 h4,
 p {
@@ -56,7 +56,7 @@ header img {
   width: 150px;
   height: 100%;
   object-fit: cover;
-  padding-left: 2px;
+  padding-left: 12px;
 }
 
 /*  Eléments de navigation */
@@ -72,10 +72,9 @@ nav {
 }
 
 .navBar a {
-  flex: 1;
-  padding: 32px;
+  padding: 50px;
   border-top: 4px solid transparent;
-  font-size: larger;
+  font-size: 19px;
 }
 
 .navBar a:hover {
@@ -87,7 +86,7 @@ nav {
 .searchbox {
   width: 39%;
   height: 57px;
-  margin: 35px 10px 20px 17px;
+  margin: 18px 0 10px 13px;
 }
 
 .location-dot {
@@ -117,17 +116,16 @@ button:hover {
   border-top: #F2F2F2 1px solid;
   border-bottom: #F2F2F2 1px solid;
   padding-left: 5px;
-  font-size: large;
-  width: 250px;
+  font-size: 19px;
 }
 
 .buttonSearch {
-  color: white;
+  color: #f2f2f2;
   height: 58px;
   border: 2px solid #f2f2f2;
   background: #0065fc;
   border-radius: 0 16px 16px 0;
-  font-size: large;
+  font-size: 19px;
   font-weight: 600;
   justify-content: center;
   cursor: pointer;
@@ -174,16 +172,19 @@ button:hover {
 }
 
 .filter li {
+  display: flex;
   border: 2px solid #deebff;
   border-radius: 100vh;
   align-items: center;
-  display: flex;
 }
 
 .styleTextBoxFilter {
-  margin-top: 25.6px;
-  font-size: 28px;
+  margin-top: 25px;
   margin-bottom: 0;
+}
+.styleTextFilter {
+  padding-left: 8px;
+  padding-right: 23px;
 }
 
 .filter li:hover {
@@ -197,10 +198,6 @@ button:hover {
   width: 20%;
 }
 
-.styleTextFilter {
-  padding-left: 8px;
-  padding-right: 23px;
-}
 
 .cercle i {
   aspect-ratio: 1 / 1;
@@ -221,12 +218,11 @@ button:hover {
 .info .fa-solid {
   color: #0065fc;
   font-weight: bolder;
-  font-size: 19.2px;
 }
 
 .info {
   display: flex;
-  margin: 10px 3px 17px 16px;
+  margin: 11px 3px 44px 12px;
 }
 
 .info p {
@@ -237,15 +233,14 @@ button:hover {
 /*******Hébergement*********/
 .contentAccommodations {
   display: flex;
-  height: 100%;
-  gap: 20px;
+  gap: 32px;
 }
 
 .accommodations h3,
 .mostPopular h3 {
   margin: 0;
   margin-bottom: 16px;
-  font-size: x-large;
+  font-size: large;
 }
 
 .contentAllCards {
@@ -261,12 +256,11 @@ button:hover {
   flex: 2;
   border-radius: 20px;
   justify-content: space-between;
-  height: 100%;
-  gap: 20px;
+  gap: 32px;
 }
 
 .accommodations h4 {
-  margin-top: 91px;
+  margin-top: 41px;
 }
 
 .styleCard {
@@ -274,7 +268,6 @@ button:hover {
   min-width: 200px;
   background: white;
   border-radius: 12px;
-  padding: 2px;
   overflow: hidden;
   box-shadow: 3px 3px 2px 2px #c3bfbf;
   cursor: pointer;
@@ -297,23 +290,23 @@ p {
   object-fit: cover;
   background-position: center;
   width: 100%;
-  height: 100px;
+  height: 150px;
   border-radius: 15px 15px 0 0;
   padding: 5px;
 }
 
 .stars {
   color: #0065fc;
-  margin: 30px 11px 9px;
+  margin: 6px 11px 9px;
 }
-
+  
 .noChecked {
   color: #deebff;
 }
 
 /*Les plus Populaires*/
 .mostPopular {
-  flex: 1;
+  flex: 0.9;
   background: #f2f2f2;
   padding: 32px;
   border-radius: 20px;
@@ -326,7 +319,6 @@ p {
 
 .allCardmostPopular {
   display: flex;
-  gap: 10px;
 }
 
 .mostPopular .fa-solid {
@@ -335,7 +327,7 @@ p {
 
 .mostPopular img {
   object-fit: cover;
-  width: 125px;
+  width: 150px;
   height: 94%;
   border-radius: 12px 0 0 12px;
   margin: 5px;
@@ -344,30 +336,29 @@ p {
 .mostPopular .styleCard {
   display: flex;
   margin-bottom: 1px;
-  width: 100%;
   height: 170px;
 }
 
 .mostPopular .stars {
-  margin-top: 53px;
+  margin: 3px 10px 17px;
 }
 
 /******Activités********/
 .contentActivity {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 54px;
+  margin-bottom: 54px;
 }
 
 .contentAllCardsActivity {
   display: flex;
-  height: 600px;
+  height: 500px;
   justify-content: space-between;
   gap: 32px;
 }
 
 #activity h3 {
   margin-left: 33px;
-  font-size: x-large;
+  font-size: large;
 }
 
 .singleCard,
@@ -408,7 +399,7 @@ p {
 
 .div2,
 .div6 {
-  flex: 2;
+  flex: 1.4;
 }
 
 .div3,
@@ -431,13 +422,12 @@ p {
   max-width: 1440px;
   margin: auto;
   display: flex;
-  gap: 32px;
 }
 
 .cardFooter {
   display: flex;
   flex-direction: column;
-  padding: 17px;
+  padding: 20px;
   min-width: 30%;
 }
 
@@ -477,10 +467,12 @@ p {
   .mostPopular {
     border-radius: 0;
   }
+  .mostPopular .styleTextCard, .mostPopular .stars{
+   font-size: 13px;
+  }
 
   /*Section Activity*/
   .contentAllCardsActivity {
-    border: 2px solid sandybrown;
     flex-wrap: wrap;
     gap: 9px;
     height: auto;
@@ -553,7 +545,8 @@ p {
   }
 
   .styleSearchInput {
-    min-width: 238px;
+    min-width: 210px;
+    text-overflow: ellipsis;
   }
 
   /***********/
